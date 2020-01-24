@@ -11,7 +11,7 @@ namespace Project01_Introduction
         static void Main(string[] args)
         {
             // example 0 - first program
-            Console.WriteLine("Hello World!");
+            //Console.WriteLine("Hello World!");
             //Console.ReadKey();
             // Debug.WriteLine("Hello World!");
 
@@ -144,7 +144,28 @@ namespace Project01_Introduction
             string num3 = Console.ReadLine();
             int z = Convert.ToInt32(third);
 
-            
+            if(x>y)
+            {
+                if(x>z)
+                {
+                    Console.WriteLine("The largest of the three is " + x);
+
+                }
+                else
+                {
+                    Console.WriteLine("The largest of the three is " + z);
+                }
+            }
+            else if(y>z)
+            {
+                Console.WriteLine("The Largest of three is " + y);
+            }
+            else
+            {
+                Console.WriteLine("The Largest of three is " + z);
+            }
+
+                
 
             // example 5 - loop
             //bool stopProgram = false;
