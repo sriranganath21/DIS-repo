@@ -55,14 +55,14 @@ namespace Project01_Introduction
             // Eg. a=3, b=4, c=5. Area = 6
 
             //Write your code here
-           
-      
-           
+
+
+
 
             Console.WriteLine("Please enter the first side of the triangle");
             string first = Console.ReadLine();
             int a = Convert.ToInt32(first);
-            
+
 
             Console.WriteLine("Please enter the second side of the triangle");
             string second = Console.ReadLine();
@@ -116,7 +116,7 @@ namespace Project01_Introduction
             Console.WriteLine("Enter a whole number");
             string num = Console.ReadLine();
             int n = Convert.ToInt32(num);
-            if(n%2==0)
+            if (n % 2 == 0)
             {
                 Console.WriteLine("Its an even number");
             }
@@ -133,20 +133,20 @@ namespace Project01_Introduction
             // Write your code here
             Console.WriteLine("Please enter the first number");
             string num1 = Console.ReadLine();
-            int x = Convert.ToInt32(first);
+            int x = Convert.ToInt32(num1);
 
 
             Console.WriteLine("Please enter the second number");
             string num2 = Console.ReadLine();
-            int y = Convert.ToInt32(second);
+            int y = Convert.ToInt32(num2);
 
             Console.WriteLine("Please enter the third number");
             string num3 = Console.ReadLine();
-            int z = Convert.ToInt32(third);
+            int z = Convert.ToInt32(num3);
 
-            if(x>y)
+            if (x > y)
             {
-                if(x>z)
+                if (x > z)
                 {
                     Console.WriteLine("The largest of the three is " + x);
 
@@ -156,7 +156,7 @@ namespace Project01_Introduction
                     Console.WriteLine("The largest of the three is " + z);
                 }
             }
-            else if(y>z)
+            else if (y > z)
             {
                 Console.WriteLine("The Largest of three is " + y);
             }
@@ -165,7 +165,7 @@ namespace Project01_Introduction
                 Console.WriteLine("The Largest of three is " + z);
             }
 
-                
+
 
             // example 5 - loop
             //bool stopProgram = false;
@@ -199,8 +199,15 @@ namespace Project01_Introduction
 
             // Write your code here
 
-
-
+            Console.WriteLine("Enter the number value");
+            int n1 = Convert.ToInt32(Console.ReadLine());
+            double total = 0;
+            int i;
+            for (i = 1; i <= n1; i++)
+            {
+                total = i + total;
+            }
+            Console.WriteLine("the sum " + n1 + " numbers is " + total);
 
             // Exercise 5
             // Input a value (n) from the user and display the following * pattern:
@@ -214,7 +221,18 @@ namespace Project01_Introduction
 
             // Write your code here
 
+            Console.WriteLine("Enter the number of times to repeat pattern");
+            int number = Convert.ToInt32(Console.ReadLine());
+            int f, e, d;
+            for (f = 1; f <= number; f++)
+            {
 
+                for (d = 1; d <= f; d++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine("");
+            }
 
 
             // Exercise 6
@@ -228,8 +246,22 @@ namespace Project01_Introduction
             // *****
 
             // Write your code here
+            Console.WriteLine("Enter the number of times to repeat pattern");
+            int numb = Convert.ToInt32(Console.ReadLine());
+            int p, q, r;
+            for (p = 1; p <= numb; p++)
+            {
+                for (q = 1; q <= numb - p; q++)
+                {
+                    Console.Write(" ");
+                }
+                for (r = 1; r <= p; r++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine("");
 
-
+            }
 
 
             // example 6 - method
